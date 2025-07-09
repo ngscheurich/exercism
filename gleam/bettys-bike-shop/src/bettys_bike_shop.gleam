@@ -12,5 +12,7 @@ pub fn pence_to_pounds(pence: Int) -> Float {
 }
 
 pub fn pounds_to_string(pounds: Float) -> String {
-  string.concat(["£", float.to_string(pounds)])
+  pounds
+  |> float.to_string()
+  |> string.append("£", _)
 }
